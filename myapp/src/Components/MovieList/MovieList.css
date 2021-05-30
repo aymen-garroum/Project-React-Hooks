@@ -1,0 +1,7 @@
+.div_liste{
+width: 80%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-left: 25px;
+}
