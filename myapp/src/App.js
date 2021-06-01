@@ -14,10 +14,8 @@ function App() {
 
   let filter_tab = [];
   let val_titre = titre.toLowerCase().trim();
-
-  if(val_titre !== "")
-  {filter_tab = Movie.filter(el => (el.title.toLowerCase().includes(val_titre)) && (el.rating == rating))} else {filter_tab=Movie}
   
+  filter_tab = Movie.filter(el => (el.title.toLowerCase().includes(val_titre)) && (el.rating >= rating))
 
   return (
     <div className="App">
